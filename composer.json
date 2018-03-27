@@ -1,0 +1,30 @@
+{
+    "name": "codeuz/project",
+    "description": "Let's create quickly a new Laravel project",
+    "authors": [
+        {
+            "name": "apalette",
+            "email": "aurelie@codeuz.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "classmap": [
+            "src"
+        ],
+        "psr-4": {
+            "Codeuz\\Project\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Codeuz\\Project\\ProjectServiceProvider"
+            ],
+            "aliases": {
+            	"ProjectMenu": "Codeuz\\Project\\ProjectMenu"
+        	}
+        }
+    }
+}
