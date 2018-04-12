@@ -79,6 +79,11 @@ body {
 		display : inline-block;
 	}
 	
+.dropdown-menu-lang {
+	min-width : 48px;
+	text-align :center;
+}
+	
 .navbar-fixed-top  .navbar-toggle {
 	float : left;
 	height : 45px;
@@ -91,6 +96,11 @@ body {
 
 .keep-open>.dropdown-menu {
     display: block;
+}
+
+.btn-nostyle {
+	background-color : transparent;
+	border : none;
 }
 
 /**
@@ -244,6 +254,10 @@ body {
         position: relative;
         margin-right: 0;
     }
+    .dropdown-menu-lang {
+		min-width : 54px;
+		text-align :center;
+	}
 }
 
 /**

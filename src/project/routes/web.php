@@ -16,7 +16,10 @@ Route::get('/login',  [ 'as' => 'login', 'uses' => 'Auth\LoginController@showLog
 Route::post('/login',  [ 'as' => 'login', 'uses' => 'Auth\LoginController@login']);
 Route::get('/logout',  [ 'as' => 'logout', 'uses' => 'Auth\LoginController@logout']);
 
-/** Orders */
+/** Language */
+Route::post('/language', 'AppController@postLanguage');
+
+/** App */
 Route::get('/',  [ 'as' => 'home', 'uses' => 'HomeController@index']);
 Route::get('/home/page1',  [ 'as' => 'page1', 'uses' => 'HomeController@index']);
 Route::get('/page2',  [ 'as' => 'page2', 'uses' => 'HomeController@index']);
